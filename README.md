@@ -1,12 +1,11 @@
-# 云开发 quickstart
+# Abstract
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+In order to meet the actual needs of the majority of fitness and weight-loss people, providing them with a platform for friendly communication and helping them develop the habit of insisting on exercise or diet control, based on cloud development, I designed and developed a mini-program of sharing and punching system for fitness people. On the basis of introducing the mini-program and cloud development, the overall design scheme is presented, and the operation effect of the system is shown. By logging into the system, users can easily achieve functions of posting, punching, commenting, hitting ‘likes’ for others and so on, featuring humanization and strong interaction.
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
 
-## 参考文档
+## Key words
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
+- Fitness people
+- Wechat
+- Mini-program
+- Cloud development
