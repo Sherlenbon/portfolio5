@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<open-data class="userinfo-avatar" type="userAvatarUrl"></open-data>
+<open-data class="userinfo-nickname" type="userNickName"></open-data>
+
+<button class="item" open-type="getUserInfo" type="primary" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>
+
+<!-- type="primary"  -->

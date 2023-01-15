@@ -1,0 +1,75 @@
+<!--pages/mycode/my/my.wxml-->
+<!-- <view class="container">
+  <view wx:for="{{tiezi}}" wx:key="index" class="item">
+    <text class="title">{{item.title}}</text>
+    <image src="{{item.head}}" style='width:35rpx;height:35rpx;margin-top:100px;border-radius:10px'></image>
+    <text class="title">{{item.nickname}}</text>
+  </view>
+</view> -->
+<view class='item2'>
+  <view class='setting' bindtap='jumpLogin'>
+    <image class='btnImg' src="{{userInfo.avatarUrl}}" style='width:80rpx;height:80rpx;  border-radius:45px;margin-left:16rpx;margin-bottom:10rpx;margin-top:8rpx'></image> 
+    <text decode="true" class="title2">&nbsp;&nbsp;{{userInfo.nickName}}</text>
+  </view>
+  <text decode="true" class="title4">{{userInfo.province}}&nbsp;{{userInfo.city}}</text>
+
+</view>
+<!-- {{userInfo.gender}}&nbsp;| -->
+<text decode="true" class="title">&nbsp;我的帖子</text>
+
+<view class="container">
+  <view wx:for="{{tiezi}}" wx:key="index"  data-index='{{index}}' bindlongtap="showMenu" class="item">
+    <view class='setting' bindtap='jumpLogin'>
+      <image class='btnImg' src="{{userInfo.avatarUrl}}" style='width:48rpx;height:48rpx;border-radius:20px;margin-left:16rpx;margin-top:4rpx;margin-bottom:4rpx;'></image> 
+      <text decode="true" class="title2">&nbsp;{{userInfo.nickName}}</text>
+      
+      
+        <view class='praise' data-index='{{index}}' catchtap='zan'>
+          <image src='{{item.zanUrl}}'  style='width:36rpx;height:29rpx;margin-right:6rpx'></image> 
+          <text class='ml10'> {{item.praise || 0}}</text>
+        </view>
+       
+
+    </view>
+     
+      <image data-index='{{index}}' class="item-img"  mode="widthFix" style='margin-top:10rpx' src="{{item.pic}}"></image>
+      <text decode="true" class="punch">{{item.punch_day}}day已打卡</text>
+      <text decode="true" class="title">{{item.title}}</text>
+      <view class='item1'>{{item.content}}</view>
+
+    <text decode="true" class="title">全部评论</text>  
+    <view class='comment'>
+      <view wx:for="{{item.comment}}" wx:key="index" decode="true" class="title">
+        <view class='setting1' bindtap='jumpLogin'>
+         <image class='btnImg' src="{{item.head}}" style='width:38rpx;height:38rpx;border-radius:19px;margin-left:5rpx'></image> 
+         <text decode="true" class="title2">&nbsp;{{item.nickname}}:</text>
+         <text decode="true" class="item3">&nbsp;{{item.content}}</text>
+       </view>       
+      </view>
+    </view>
+      <!-- <van-button type="danger"  data-id="{{id}}"  bind:click="delete">删除</van-button> -->
+  </view>
+</view>
+
+<!-- <view class="container">
+  <view wx:for="{{tiezi}}" wx:key="index" class="item">
+      <image data-index='{{index}}' catchtap="showDetail" class="item-img"  mode="widthFix" src="{{item.pic}}"></image>
+      <text decode="true" class="title">&nbsp;&nbsp;{{item.title}}</text>
+    <view class='setting' bindtap='jumpLogin'>
+      <image class='btnImg' src="{{item.head}}" style='width:35rpx;height:35rpx;border-radius:10px;margin-left:16rpx'></image> 
+      <text decode="true" class="title">&nbsp;{{item.nickname}}</text>
+      <image style='width:34rpx;height:29rpx;margin-left:545rpx'  src="../images/like.png"></image>
+      <!-- <image  catchtap='onCollectionTap' style='width:34rpx;height:29rpx;margin-left:214rpx' wx:if="{{collected}}" src="../images/like_active.png"></image> -->
+  <!-- <image class='btnImg' src='../images/like.png' style='width:34rpx;height:29rpx;margin-left:214rpx'></image> -->
+      <!-- <text decode="true" class="title2">{{item.res.id}}</text> 
+    </view>
+  </view>
+</view> --> 
+
+ <view id='tabbar'>
+        <image catchtap='jump_to_read' id='icon-read' src='{{read_img}}'></image>
+   
+        <image catchtap='jump_to_publish' id='icon-create' src='../images/create.png'></image>
+        <image catchtap='jump_to_me' id='icon-my' src='{{my_img}}'></image>
+ 
+    </view>

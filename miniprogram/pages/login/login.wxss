@@ -1,0 +1,20 @@
+/* pages/login/login.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.item{
+  margin: 20rpx;
+}
+
+
+
+.userinfo-nickname {
+  color: rgb(155, 155, 155);
+  background-color: #eeeeee;
+  margin:20rpx;
+}
+

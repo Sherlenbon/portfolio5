@@ -1,0 +1,23 @@
+{
+  "pages": [
+    
+    "pages/login/login",
+    "pages/mycode/read/read",
+    "pages/mycode/read/detail/detail",
+    "pages/mycode/index/index",
+    "pages/mycode/read/detail/comment/comment",
+    "pages/mycode/publish/publish",
+    "pages/mycode/my/my"
+    
+  
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "轻+",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

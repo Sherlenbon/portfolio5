@@ -1,0 +1,126 @@
+/* pages/mycode/read/detail/detail.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width:100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-top: -10rpx;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 740rpx;
+  min-height: 300rpx;
+  background-color: #fff;
+  margin: 10rpx;
+  padding-bottom: 16rpx;
+  border-radius: 10rpx;
+
+}
+.item1 {
+  font-size: 26rpx;
+  color: rgb(99, 98, 98);
+  margin: 16rpx; 
+}
+.item2 {
+  font-size: 26rpx;
+  color: rgb(99, 98, 98);
+  margin: 10rpx; 
+}
+.item3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 740rpx;
+  min-height: 100rpx;
+  background-color: #fff;
+  margin: 10rpx;
+  padding-bottom: 16rpx;
+  border-radius: 10rpx; 
+}
+
+.item-img {
+  width: 100%;
+}
+
+.punch{
+  position: absolute;
+  top: 95rpx;
+  left: 40rpx;
+  color: white;
+  font-size: 50rpx;
+  text-shadow: 0px 1px 2rpx rgba(65, 65, 65, 0.781);
+}
+.title{
+  font-size: 28rpx;
+  color: rgb(49, 49, 49);
+  margin-left: 16rpx; 
+  margin-top: 16rpx;
+}
+.title2{
+  font-size: 26rpx;
+  color: rgb(99, 98, 98);
+}
+.title3{
+  font-size: 28rpx;
+  color: rgb(85, 85, 85);
+  margin-left: 16rpx; 
+  margin-top: 16rpx;
+}
+.praise{
+  position: absolute;
+  top: 22rpx;
+  right: 55rpx;
+}
+
+.ml10{
+  position: absolute;
+  font-size:26rpx; 
+  color: rgb(99, 98, 98);
+  top:3rpx
+}
+.content{
+  width: 700rpx;
+  font-size: 26rpx;
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+}
+
+.setting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+.setting1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#btn {
+  width: 120rpx;
+  height: 55rpx;
+  color: #edca07;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  border: 2rpx solid  #edca07;
+  border-radius: 10rpx;
+  margin: 0;
+  padding: 0;
+  margin-left: 15rpx;
+  margin-top: 5rpx
+}
+.comment{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

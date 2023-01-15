@@ -1,0 +1,13 @@
+<!--pages/mycode/publish/publish.wxml-->
+<view class="container">
+  <input class="title" placeholder="标题" bindinput="onTitleChange"></input>
+
+  <textarea class="content" placeholder="正文" bindinput="onContentChange"></textarea>
+
+  <view class="icon-container">
+<image bindtap='upload' id='icon-image' src='../images/image.png'></image>
+<button id="btn" bindtap="onSubmit">发表</button>
+  </view>
+</view>
+
+<!-- type="primary" -->

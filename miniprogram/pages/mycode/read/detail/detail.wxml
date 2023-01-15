@@ -1,0 +1,35 @@
+<!--pages/mycode/read/detail/detail.wxml-->
+<view class="container">
+  <view class="item">
+    <view class='setting' bindtap='jumpLogin'>
+      <image class='btnImg' src="{{tiezi.head}}" style='width:48rpx;height:48rpx;border-radius:25px;margin-left:16rpx;margin-top:6rpx;margin-bottom:6rpx'></image> 
+      <text decode="true" class="title2">&nbsp;{{tiezi.nickname}}</text>
+
+      
+        <view class='praise' catchtap='zan'>
+          <image src='{{tiezi.zanUrl}}'  style='width:36rpx;height:29rpx;margin-right:6rpx'></image> 
+          <text class='ml10'> {{tiezi.praise || 0}}</text>
+        </view>
+
+    </view>
+
+      <image class="item-img" style="margin-top:10rpx" mode="widthFix" src="{{tiezi.pic}}"></image>
+      <text decode="true" class="punch">{{tiezi.punch_day}}day已打卡</text>
+      <text decode="true" class="title">{{tiezi.title}}</text>
+      <view class='item1'>{{tiezi.content}}</view>
+
+      <button id="btn" bindtap="onComment">评论</button>
+      
+      <view class='comment'>
+      <view wx:for="{{tiezi.comment}}" wx:key="index" decode="true" class="title">
+        <view class='setting1' bindtap='jumpLogin'>
+         <image class='btnImg' src="{{item.head}}" style='width:40rpx;height:40rpx;border-radius:20px'></image> 
+         <text decode="true" class="title2">&nbsp;{{item.nickname}}&nbsp;:</text>
+         <text decode="true" class="item2">&nbsp;{{item.content}}</text>
+       </view>       
+      </view>
+      </view>
+      
+
+  </view>
+</view>

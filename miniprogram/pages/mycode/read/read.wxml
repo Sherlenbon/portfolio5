@@ -1,0 +1,62 @@
+<!--pages/mycode/read/read.wxml-->
+  <view hidden='{{read_hide}}' id='read-page'>
+        <!-- 搜索框 -->
+        <view class='search-container'>
+            <image class='search-icon' src='../images/search.png'></image>
+            <!-- <icon size='18' class='clear-icon' type='clear'></icon> -->
+            <input bindinput="onsearchChange" placeholder-class='index-search-ph' class='search-input' confirm-type="搜索" bindconfirm="search" type='text' placeholder='帖子|用户'></input>
+          <!-- confirm-type='search' bindinput='input1' bindconfirm='confirm1' -->
+            <!-- <view wx:for="{{hosList}}" wx:key>
+                <text wx:if="{{item.show}}">{{item.name}}</text>
+            </view> -->
+            
+        </view> 
+  </view>
+  <!-- <input type='text' confirm-type='search' bindinput='input1' bindconfirm='confirm1' style='border:1px solid #f00'/>
+
+<view wx:for="{{hosList}}" wx:key>
+
+<text wx:if="{{item.show}}">{{item.name}}</text>
+
+</view> -->
+
+
+
+  <view wx:if='{{!my_hide}}' id='my-page'>
+  </view>
+<view class="container">
+  <view wx:for="{{tiezi}}" data-index='{{index}}' bindtap="showDetail" wx:key="index" class="item">
+      <image class="item-img" style='border-top-right-radius:10rpx;border-top-left-radius:10rpx' mode="widthFix" src="{{item.pic}}">
+      </image>
+      <text decode="true" class="punch">{{item.punch_day}}day已打卡</text>
+      <text decode="true" class="title">&nbsp;&nbsp;{{item.title}}</text>
+    <view class='setting' bindtap='jumpLogin'>
+      <image class='btnImg' src="{{item.head}}" style='width:38rpx;height:38rpx;border-radius:10px;margin-left:15rpx;margin-top:3rpx'></image> 
+      <text decode="true" class="title2">&nbsp;{{item.nickname}}</text>
+      
+
+      <!-- <image wx:else catchtap='onCollectionTap' style='width:34rpx;height:29rpx;margin-left:214rpx' src="../images/like.png"></image> -->
+
+      <!-- <text decode="true" class="title2">{{item.res.id}}</text>  -->
+     
+    </view>
+        <view class='praise' catchtap='zan' data-index='{{index}}'>
+          <image src='{{item.zanUrl}}'  style='width:36rpx;height:29rpx;margin-right:6rpx'></image> 
+          <text class='ml10'> {{item.praise || 0}}</text>
+        </view>
+
+    
+
+  </view>
+</view>
+      
+      <!-- <image class='btnImg' src='../images/like.png' style='width:34rpx;height:29rpx;margin-left:214rpx'></image> -->
+ <!-- <image  catchtap='onCollectionTap' style='width:34rpx;height:29rpx;margin-left:214rpx' wx:if="{{collected}}" src="../images/like_active.png"></image> -->
+    <!-- tabbar -->
+    <view id='tabbar'>
+        <image catchtap='jump_to_read' id='icon-read' src='{{read_img}}'></image>
+
+        <image catchtap='jump_to_publish' id='icon-create' src='../images/create.png'></image>
+        <image catchtap='jump_to_me' id='icon-my' src='{{my_img}}'></image>
+ 
+    </view>

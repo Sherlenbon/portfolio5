@@ -1,0 +1,8 @@
+<!--pages/mycode/read/detail/comment/comment.wxml-->
+<view class="container">
+  <textarea class="comment" placeholder="输入评论" bindinput="onCommentChange"></textarea>
+
+  <view class="icon-container">
+<button id="btn" bindtap="onSubmit">发表</button>
+  </view>
+</view>
